@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./src/style/output.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+
+<body class="bg-[#efefef]">
+    <!-- bu umumiy cantenir -->
+    <div class="w-[1440px] mx-auto bg-white">
+        <!-- header qismi -->
+        <header class="header h-[1080px] bg-white">
+            <nav class="w-[1200px] h-[108px] mx-auto  flex justify-between items-center">
+                <div>
+                    <p class="text-[#FFFFFF] text-[28px]">Panto</p>
+                </div>
+                <ul class="w-[480px] text-[#fff] text-[18px] flex justify-between items-center">
+                    <li><a href="#" class="flex justify-between gap-3">
+                            Furniture
+                            <img src="./src/style/asset/icons/eva_arrow-ios-back-outline.svg" alt="">
+                        </a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="w-[200px]  flex justify-center items-center gap-3">
+                    <p id="minus" class=" btn-non  hidden w-[30px] h-[30px] rounded-3xl border-2 bg-white font-bold text-[20px] py-1 px-2">-</p>
+                    <p id="clears" class="btn-non hidden w-[100px] h-[30px] rounded-3xl border-2 bg-red-700 font-bold text-[15px] py-1 px-5">clear</p>
+                    <img id="savat__id" src="./src/style/asset/icons/Bag.svg" alt="">
+                    <p id="son__yigish" style="transform: translate(-15px, 0px);"
+                        class="w-[25px] h-[25px] rounded-full bg-[#c6751e] text-[#fff] flex justify-center items-center">
+                        0 </p>
+                </div>
+            </nav>
+            <div class="text-center">
+                <h2 class="text-[#FFFFFF] text-[80px] font-Gilroy-Bold mx-auto">Make your interior more <br>
+                    minimalistic & modern</h2>
+                <p class="text-[#FFFFFF] text-[24px] font-Gilroy-Regula mt-4">Turn your room with panto into a lot
+                    more
+                    minimalist <br> and modern with ease and speed</p>
+                <div
+                    class="relative w-[344px] h-[56px] flex items-center mx-auto rounded-[50px] bg-[#ffffff3c] mt-[55px]">
+                    <input type="text" placeholder="Search furniture"
+                        class="w-full h-full px-5 rounded-[50px] bg-transparent text-white placeholder-white focus:outline-none" />
+                    <img src="./src/style/asset/icons/Frame 48095395.svg" alt="Search" class="absolute left-[300px]" />
+                </div>
+            </div>
+        </header>
+
+        <!-- section__1  bo'limi -->
+        <section class="bg-white">
+            <div class="w-[1200px] h-[400px] mx-auto my-[15px] flex justify-between items-center gap-4">
+                <div>
+                    <h2 class="text-[#1E1E1E] font-Gilroy-Bold font-bold text-[42px]">Why <br> Choosing Us</h2>
+                </div>
+                <div class="w-[285px] ml-auto">
+                    <p class="text-[#1E1E1E] font-Gilroy-Bold font-bold text-[24px]">Luxury facilities</p>
+                    <p class="text-[#1E1E1E] font-Gilroy-Regular text-[16px] mt-4">The advantage of hiring a workspace
+                        with us is that givees you comfortable service and all-around
+                        facilities.</p>
+                    <button class="flex gap-5 mt-5">
+                        <p class="text-[#E58411] text-[14px]">More Info</p>
+                        <img src="./src/style/asset/icons/grommet-icons_form-next-link.svg" alt="">
+                    </button>
+                </div>
+                <div class="w-[285px]">
+                    <p class="text-[#1E1E1E] font-Gilroy-Bold font-bold text-[24px]">Luxury facilities</p>
+                    <p class="text-[#1E1E1E] font-Gilroy-Regular text-[16px] mt-4">The advantage of hiring a workspace
+                        with us is that givees you comfortable service and all-around
+                        facilities.</p>
+                    <button class="flex gap-5 mt-5">
+                        <p class="text-[#E58411] text-[14px]">More Info</p>
+                        <img src="./src/style/asset/icons/grommet-icons_form-next-link.svg" alt="">
+                    </button>
+                </div>
+                <div class="w-[285px] ">
+                    <p class="text-[#1E1E1E] font-Gilroy-Bold font-bold text-[24px]">Luxury facilities</p>
+                    <p class="text-[#1E1E1E] font-Gilroy-Regular text-[16px] mt-4">The advantage of hiring a workspace
+                        with us is that givees you comfortable service and all-around
+                        facilities.</p>
+                    <button class="flex gap-5 mt-5">
+                        <p class="text-[#E58411] text-[14px]">More Info</p>
+                        <img src="./src/style/asset/icons/grommet-icons_form-next-link.svg" alt="">
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- section__2  bo'limi -->
+        <section class="bg-[#f7f7f7] pt-[50px]">
+            <div class="w-[1080px] mx-auto">
+                <h2 class="text-[42px] font-Gilroy-Bold text-[#1e1e1e] text-center py-5 font-bold">Best Selling Product
+                </h2>
+                <ul class="section__2-ul bg-[#eeeeee]">
+
+                    <li data-filter="chair">Chair</li>
+                    <li data-filter="beds">Beds</li>
+                    <li data-filter="sofa">Sofa</li>
+                    <li data-filter="lamp">Lamp</li>
+                </ul>
+            </div>
+            <div class="mt-10">
+                <div id="carusel1" class="w-[1080px] mx-auto flex  items-center">
+                    <button
+                        class="btn__carusel1  w-[50px] h-[50px] rounded-full  border-2 flex items-center justify-center ">&lt;
+                    </button>
+                    <div data-category="chair" id="contenir__cart"
+                        class="cart grid grid-cols-4 gap-4 max-h-[525px] overflow-hidden">
+                        <div class="cart w-[260px] h-[442px] rounded-2xl mt-16 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/Group 3742.svg" alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Chair</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son1" class="btn__son" style="cursor: pointer;"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="chair"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-16 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark.svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Chair</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son2" class="btn__son" style="cursor: pointer;"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="chair"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-16 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (1).svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Chair</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son3" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="chair"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-16 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (2).svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Chair</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son4" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div data-category="beds"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/Group 3742.svg" alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Beds</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__so5" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="beds"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark.svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Beds</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__so6" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="beds"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (1).svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Beds</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son7" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="beds"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (2).svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Beds</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__so8" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div data-category="sofa"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/Group 3742.svg" alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Sofa</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son9" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="sofa"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark.svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Sofa</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son10" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="sofa"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (1).svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Sofa</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son11" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="sofa"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (2).svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Sofa</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son12" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div data-category="lamp"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/Group 3742.svg" alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Lamp</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son13" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="lamp"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark.svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Lamp</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son14" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="lamp"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (1).svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Lamp</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__son15" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-category="lamp"
+                            class="cart w-[260px] h-[442px] rounded-2xl mt-14 shadow-md shadow-[#1111114d]">
+                            <div class="h-[220px] " style="transform: translate(5px, -50px);">
+                                <img src="./src/style/asset/imgs/sakarias-armchair-black-sporda-dark-gray__0729767_pe737131_s5_adobespark (2).svg"
+                                    alt="">
+                            </div>
+                            <div class="p-5">
+                                <p class="text-[18px] text-[#645858]">Lamp</p>
+                                <h3 class="text-[21.33px] text-[#1e1e1e] font-bold mt-2">Sakarias Armchair</h3>
+                                <div class="flex gap-2 mt-3">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    <img src="./src/style/asset/icons/Star.svg" alt="">
+                                </div>
+                                <div class="mt-10 flex justify-between">
+                                    <p class="text-[21.33px] text-[#1e1e1e] font-bold mt-2"><sup>$</sup>392</p>
+                                    <button id="btn__so16" class="btn__son"><img
+                                            src="./src/style/asset/icons/Frame 174.svg" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="btn__carusel2 w-[50px] h-[50px] rounded-full border-2 flex items-center justify-center ">&gt;</button>
+                </div>
+            </div>
+            <div class="mt-12 flex justify-center">
+                <button id="btn__cat-ochish" class="flex gap-5 mt-6 my-[30px]">
+                    <p class="text-[#E58411] text-[14px]">View All</p>
+                    <img src="./src/style/asset/icons/grommet-icons_form-next-link.svg" alt="">
+                </button>
+            </div>
+        </section>
+
+
+        <!-- section__3  bo'limi -->
+        <section class="pt-[200px] flex gap-[200px] bg-white">
+            <div class="section__rasim1">
+                <img class="w-[629px] h-[445px] rounded-[20px] left-[-27px]"
+                    src="./src/style/asset/imgs/Rectangle 1446.svg" alt="">
+            </div>
+            <div class="w-[560px]">
+                <p class="text-[#E58411] text-[17px] font-Gilroy-SemiBold mt-5">experiences</p>
+                <h2 class="text-[#1e1e1e] text-[42px] font-Gilroy-Bold font-bold mt-3">We Provide You The <br> Best
+                    Experience</h2>
+                <p class="text-[#1e1e1e] text-[18px] font-Gilroy-Bold mt-5">You don’t have to worry about the result
+                    because all of these interiors are made by people who are
+                    professionals in their fields with an elegant and lucurious style and with premium quality materials
+                </p>
+                <button class="flex gap-5 mt-6">
+                    <p class="text-[#E58411] text-[14px]">More Info</p>
+                    <img src="./src/style/asset/icons/grommet-icons_form-next-link.svg" alt="">
+                </button>
+            </div>
+        </section>
+
+
+        <!-- section__4  bo'limi -->
+        <section class="mt-[250px] flex justify-between items-center">
+            <div class="w-[560px] ml-[80px] mt-[50px]">
+                <p class="text-[#E58411] text-[17px] font-Gilroy-SemiBold mt-5">Materials</p>
+                <h2 class="text-[#1e1e1e] text-[42px] font-Gilroy-Bold font-bold mt-3">Very serious <br> materials for
+                    making <br> furniture</h2>
+                <p class="text-[#1e1e1e] text-[18px] font-Gilroy-Bold mt-5">Because panto was very serious about
+                    designing furniture for our environment, using a very expensive and famous capital but at a
+                    relatively low price
+                </p>
+                <button class="flex gap-5 mt-6">
+                    <p class="text-[#E58411] text-[14px]">More Info</p>
+                    <img src="./src/style/asset/icons/grommet-icons_form-next-link.svg" alt="">
+                </button>
+            </div>
+            <div class="flex justify-between ">
+                <div class="section__rasimlar">
+                    <div class="rasim-1 w-[223px] h-[250px] rounded-[20px] overflow-hidden duration-300">
+                        <img class="w-full h-full object-cover scale-150 transition-transform"
+                            src="./src/style/asset/imgs/Group 48095417.svg" alt="">
+                    </div>
+                    <div class="rasim-2 mt-5">
+                        <img class="w-[223px] h-[317px] mt-7" src="./src/style/asset/imgs/Rectangle 1450.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="section__rasim2 mt-[160px]">
+                    <img class=" w-[630px] h-[445px] rounded-[20px]" src="./src/style/asset/imgs/Rectangle 1446 (1).svg"
+                        alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- section__5  qismi -->
+        <section>
+            <div class="mt-[200px]">
+                <div class="text-center">
+                    <p class="text-[18px] text-[#E58411] font-Gilroy-SemiBold">Testimonials</p>
+                    <h2 class="text-[42px] text-[#1e1e1e] font-Gilroy-Bold">Our Client Reviews</h2>
+                </div>
+                <div class="flex items-center overflow-hidden w-[1080px] mx-auto  ">
+                    <button
+                        class="prev btn__carusel3 w-[50px] h-[50px] rounded-full bg-white border-2 flex items-center justify-center ">&lt;</button>
+                    <p></p>
+                    <div
+                        class="carousel-track mx-auto flex  mt-16 overflow-hidden transition-transform duration-500 ease-in-out">
+                        <div class="sectin__5-cart1 w-[370px] h-[500px] p-7 ">
+                            <div class="mt-[180px]">
+                                <div>
+                                    <img src="" alt="">
+                                </div>
+                                <div class="px-9 py-5 bg-white rounded-2xl text-center">
+                                    <p class="text-[18px] font-Gilroy-Bold text-[#1e1e1e] font-bold mt-3">Bang Upin</p>
+                                    <p class="text-[12px] font-Gilroy-Bold text-[#1e1e1e] mt-1">Pedagang Asongan</p>
+                                    <p class="text-[14px] font-Gilroy-Bold text-[#1e1e1e] mt-3">“Terimakasih banyak,
+                                        kini
+                                        ruanganku menjadi lebih mewah dan terlihat mahal“</p>
+                                    <p class="flex gap-2 justify-center mt-4">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectin__5-cart1 w-[370px] h-[500px] p-7 ">
+                            <div class="mt-[180px]">
+                                <div>
+                                    <img src="" alt="">
+                                </div>
+                                <div class="px-9 py-5 bg-white rounded-2xl text-center">
+                                    <p class="text-[18px] font-Gilroy-Bold text-[#1e1e1e] font-bold mt-3">Bang Upin</p>
+                                    <p class="text-[12px] font-Gilroy-Bold text-[#1e1e1e] mt-1">Pedagang Asongan</p>
+                                    <p class="text-[14px] font-Gilroy-Bold text-[#1e1e1e] mt-3">“Terimakasih banyak,
+                                        kini
+                                        ruanganku menjadi lebih mewah dan terlihat mahal“</p>
+                                    <p class="flex gap-2 justify-center mt-4">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sectin__5-cart1 w-[370px] h-[500px] p-7 ">
+                            <div class="mt-[180px]">
+                                <div>
+                                    <img src="" alt="">
+                                </div>
+                                <div class="px-9 py-5 bg-white rounded-2xl text-center">
+                                    <p class="text-[18px] font-Gilroy-Bold text-[#1e1e1e] font-bold mt-3">Bang Upin</p>
+                                    <p class="text-[12px] font-Gilroy-Bold text-[#1e1e1e] mt-1">Pedagang Asongan</p>
+                                    <p class="text-[14px] font-Gilroy-Bold text-[#1e1e1e] mt-3">“Terimakasih banyak,
+                                        kini
+                                        ruanganku menjadi lebih mewah dan terlihat mahal“</p>
+                                    <p class="flex gap-2 justify-center mt-4">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                        <img src="./src/style/asset/icons/Star.svg" alt="">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="next btn__carusel4 w-[50px] h-[50px] rounded-full bg-white border-2 flex items-center justify-center ">&gt;</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer qismimiz -->
+        <footer class="mt-[200px] bg-[#f7f7f7] flex">
+            <div class="w-[1080px] mt-[100px] mx-auto">
+                <div class="flex justify-between  gap-5">
+                    <div>
+                        <p class="text-[28px] font-bold text-[#1e1e1e]">Panto</p>
+                        <p class="text-[15px] font-Gilroy-Medium text-[#1e1e1e] mt-6">The advantage of hiring a
+                            workspace with <br> us is
+                            that givees you comfortable service <br> and all-around facilities.</p>
+                    </div>
+                    <div>
+                        <p class="text-[17px] text-[#F6973F] font-DM Sans">Services</p>
+                        <p class="text-[15px] text-[#1e1e1e] font-Gilroy-Medium Sans mt-4">Email Marketing</p>
+                        <p class="text-[15px] text-[#1e1e1e] font-Gilroy-Medium Sans mt-4">Campaigns</p>
+                        <p class="text-[15px] text-[#1e1e1e] font-Gilroy-Medium Sans mt-4">Branding</p>
+                    </div>
+                    <div>
+                        <p class="text-[17px] text-[#F6973F] font-DM Sans">Furniture</p>
+                        <p class="text-[15px] text-[#1e1e1e] font-Gilroy-Medium Sans mt-4">Beds</p>
+                        <p class="text-[15px] text-[#1e1e1e] font-Gilroy-Medium Sans mt-4">Chair</p>
+                        <p class="text-[15px] text-[#1e1e1e] font-Gilroy-Medium Sans mt-4">All</p>
+                    </div>
+                    <div>
+                        <p class="text-[17px] text-[#F6973F] font-DM Sans">Follow Us</p>
+
+                        <div class="gap-6 flex ">
+                            <div>
+                                <img class=" mt-[20px] flex gap-3" src="./src/style/asset/icons/001-facebook.svg" alt="">
+                                <img class=" mt-5 flex gap-3" src="./src/style/asset/icons/003-twitter.svg" alt="">
+                                <img class=" mt-5 flex gap-3" src="./src/style/asset/icons/004-instagram.svg" alt="">
+                            </div>
+
+                            <div>
+                                <p class="text-[15px] text-[#1e1e1e] font-Gilroy-Medium Sans mt-4 flex gap-3 ">
+                                    Facebook
+                                </p>
+                                <p class="text-[15px] text-[#1e1e1e] font-Gilroy-Medium Sans mt-4 flex gap-3">
+                                    Twitter
+                                </p>
+                                <p class="text-[15px] text-[#1e1e1e] font-Gilroy-Medium Sans mt-4 flex gap-3 ">
+                                    Instagram
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[150px] mb-[50px] flex justify-between">
+                    <div>
+                        <p class="text-[15px] text-[#1E2833]">Copyright © 2021</p>
+                    </div>
+                    <div class="w-[280px] flex justify-between">
+                        <p class="text-[15px] text-[#1e1e1e]">Terms & Conditions</p>
+                        <p class="text-[15px] text-[#1e1e1e]">Privacy Policys</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./src/JS/filter.js"></script>
+    <script src="./src/JS/sortlash.js"></script>
+    <script src="./src/JS/btn4_8.js"></script>
+    <script src="./src/JS/savat__uchun.js"></script>
+</body>
+
+</html>

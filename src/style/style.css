@@ -1,0 +1,118 @@
+.header {
+    background-image: url(./asset/imgs/Rectangle\ 1441.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__rasim1 {
+    width: 630px;
+    height: 445px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section__rasim1 img {
+    position: absolute;
+    left: -27px;
+}
+
+.section__rasimlar {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform: translateX(170px);
+
+}
+
+.rasim-1,
+.rasim-2 {
+    position: relative;
+
+}
+
+
+.section__rasim2 {
+    width: 630px;
+    height: 445px;
+    overflow: hidden;
+    position: relative;
+}
+
+.section__rasim2 img {
+    position: absolute;
+    right: -95px;
+}
+
+.sectin__5-cart1 {
+    background-image: url(./asset/imgs/Group\ 48095418.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section__2-ul {
+    width: 300px;
+    box-sizing: content-box;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.section__2-ul li {
+    font-size: 18px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    /* background-color: white; */
+}
+
+
+.btn__carusel1 {
+    position: absolute;
+}
+
+.btn__carusel2 {
+    position: absolute;
+    left: 1250px;
+}
+
+.btn__carusel1:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+}
+
+.btn__carusel2:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+}
+
+
+
+
+.btn__carusel3 {
+    position: absolute;
+    z-index: 1;
+}
+
+
+.btn__carusel4 {
+    position: absolute;
+    left: 1250px;
+}
+
+
+.btn__carusel3:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+}
+
+
+.btn__carusel4:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+}
+
+
+.hidden {
+    display: none;
+}
+
