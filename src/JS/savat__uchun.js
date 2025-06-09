@@ -1,50 +1,45 @@
-
 const btnList = document.querySelectorAll(".btn__son");
 const sonHisoblash = document.getElementById("son__yigish");
 const savatId = document.getElementById("savat__id");
 const minus = document.getElementById("minus");
-const clear = document.getElementById("clears")
+const clear = document.getElementById("clears");
 
 let Son = 0;
 
-
+// Har bir "+" tugmasi bosilganda sonni oshirish
 btnList.forEach((btn) => {
     btn.addEventListener("click", () => {
         Son++;
-        // console.log(Son);
         sonHisoblash.innerText = Son;
     });
 });
 
-let Son1 = 0;
+// "Savat" tugmasi holatini almashtirish
+let savatOpen = false;
 
-if (Son1 % 2 == 0) {
-    savatId.addEventListener("click", () => {
+savatId.addEventListener("click", () => {
+    savatOpen = !savatOpen;
+    if (savatOpen) {
         console.log("Savat tugmasi bosildi!");
         minus.style.display = "block";
         clear.style.display = "block";
-    });
-    Son1++;
-} else {
-    savatId.addEventListener("click", () => {
+    } else {
         console.log("Savat tugmasi yopildi!");
         minus.style.display = "none";
         clear.style.display = "none";
-    });
-    Son1++;
-}
+    }
+});
 
-// minus.forEach((btn) => {
-//     btn.addEventListener("click", () => {
-//         Son--;
-//         // console.log(Son);
-//         sonHisoblash.innerText = Son;
-//     });
-// });
+// "-" tugmasi bosilganda sonni kamaytirish
+minus.addEventListener("click", () => {
+    if (Son > 0) {
+        Son--;
+        sonHisoblash.innerText = Son;
+    }
+});
 
-// btnList.forEach((btn) => {
-//     btn.addEventListener("click", () => {
-//         // console.log(Son);
-//         sonHisoblash.innerText = 0;
-//     });
-// });
+// "Clear" tugmasi bosilganda sonni 0 qilish
+clear.addEventListener("click", () => {
+    Son = 0;
+    sonHisoblash.innerText = Son;
+});
